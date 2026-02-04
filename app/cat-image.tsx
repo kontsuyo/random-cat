@@ -17,13 +17,13 @@ export function CatImage({ url }: CatImageProps) {
   };
   return (
     <div className={styles.page}>
-      <button type="button" onClick={refreshImage} className={styles.button}>
-        One more cat!
-      </button>
       <div className={styles.frame}>
         {" "}
         {imageUrl && <img src={imageUrl} alt="" className={styles.img} />}
       </div>
+      <button type="button" onClick={refreshImage} className={styles.button}>
+        One more cat!
+      </button>
     </div>
   );
 }
